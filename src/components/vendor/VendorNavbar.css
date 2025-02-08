@@ -1,0 +1,273 @@
+General Styles
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.vendor-navbar {
+  background-color: black;
+  height: 50px;
+  padding-top: 25px;
+}
+.vendor-navbar button{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: black;
+}
+
+.vendor-navbar button:hover{ 
+  background-color: black;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Full-Screen Image Section */
+.vendor-welcome-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.full-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the screen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Places the image behind the text */
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+/* Additional Content Styles */
+.vendor-content {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.vendor-content h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.vendor-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+/* .vendor-navbar-container {
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .vendor-navbar-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    background-color: #ffc107;
+    color: #343a40;
+  }
+  
+  .navbar li a.active {
+    background-color: #ffc107;
+    color: #343a40;
+  }
+   */
+
+
+
+
+   /* .vendor-navbar-container {
+    position: fixed; /* Keeps the navbar fixed at the top 
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretches the navbar across the width of the page 
+    background-color: #f8f9fa; /* Background color of the navbar 
+    z-index: 1000; /* Ensures the navbar is on top of other elements 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333; /* Link color 
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #007bff; /* Highlight color on hover 
+  }
+   */
+
+
+
+
+
+
+   /* .vendor-navbar-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #007BFF;
+    border-radius: 8px;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar li a:hover {
+    text-decoration: underline;
+  }
+  
+  .vendor-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .content-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  .content-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .content-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+   */
+
+
+
+
+
+
+
+   
+  
